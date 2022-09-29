@@ -1,0 +1,20 @@
+GET https://{{ASTRA_DB_ID}}-{{ASTRA_DB_REGION}}.apps.astra.datastax.com/api/rest/v2/namespaces/{{ASTRA_DB_KEYSPACE}}/collections/{{table}}/this \
+  -H "X-Cassandra-Token: $ASTRA_DB_APPLICATION_TOKEN" \
+  -H 'Content-Type: application/json'
+
+### Get
+
+GET https://rvxw33nmevze22chnhwloteb4y0phlqa.lambda-url.us-east-1.on.aws/
+Content-Type: application/json
+Accept: application/json
+
+### Insert Data
+POST https://rvxw33nmevze22chnhwloteb4y0phlqa.lambda-url.us-east-1.on.aws/
+Content-Type: application/json
+Accept: application/json
+
+{                          
+    "todo_id" : "123",
+    "todo_title" : "2022-07-01",
+    "todo_description" : " Hola Demo "
+}
